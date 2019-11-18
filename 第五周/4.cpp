@@ -35,44 +35,44 @@ bool Queue::empty(){
 }
 void Queue::push(int x){
 	if (front == (rear + 1)%MAX){
-		cout << "¶ÓÁÐÒÑÂú,Èë¶ÓÁÐÊ§°Ü!" << endl;
+		cout << "é˜Ÿåˆ—å·²æ»¡,å…¥é˜Ÿåˆ—å¤±è´¥!" << endl;
 		return;
 	}
-	cout << x << "ÒÑÈë¶ÓÁÐ." << endl;
+	cout << x << "å·²å…¥é˜Ÿåˆ—." << endl;
 	array[rear] = x;
 	rear = (rear + 1)%MAX;
 }
 bool Queue::pop(){
 	if (front == rear){
-		cout << "¶ÓÁÐÎª¿Õ,³ö¶ÓÁÐÊ§°Ü!" << endl;
+		cout << "é˜Ÿåˆ—ä¸ºç©º,å‡ºé˜Ÿåˆ—å¤±è´¥!" << endl;
 		return false;
 	}
-	cout << array[front] << "ÒÑ³ö¶ÓÁÐ." << endl;
+	cout << array[front] << "å·²å‡ºé˜Ÿåˆ—." << endl;
 	front = (front + 1)%MAX;
 	return true;
 }
 int main()
 {
 	Queue q1;
-	q1.empty()? cout << "¶ÓÁÐÎª¿Õ." << endl: cout << "¶ÓÁÐ²»Îª¿Õ" << endl;
+	q1.empty()? cout << "é˜Ÿåˆ—ä¸ºç©º." << endl: cout << "é˜Ÿåˆ—ä¸ä¸ºç©º" << endl;
 	q1.push(4);
 	q1.push(5);
-	q1.empty()? cout << "¶ÓÁÐÎª¿Õ." << endl: cout << "¶ÓÁÐ²»Îª¿Õ" << endl;
+	q1.empty()? cout << "é˜Ÿåˆ—ä¸ºç©º." << endl: cout << "é˜Ÿåˆ—ä¸ä¸ºç©º" << endl;
 	q1.pop();
 	q1.pop();
-	q1.empty()? cout << "¶ÓÁÐÎª¿Õ." << endl: cout << "¶ÓÁÐ²»Îª¿Õ" << endl;
+	q1.empty()? cout << "é˜Ÿåˆ—ä¸ºç©º." << endl: cout << "é˜Ÿåˆ—ä¸ä¸ºç©º" << endl;
 	q1.pop();
-	q1.empty()? cout << "¶ÓÁÐÎª¿Õ." << endl: cout << "¶ÓÁÐ²»Îª¿Õ" << endl;
+	q1.empty()? cout << "é˜Ÿåˆ—ä¸ºç©º." << endl: cout << "é˜Ÿåˆ—ä¸ä¸ºç©º" << endl;
 	q1.push(6);
 	Queue q2(q1);
-	cout << "¶ÓÁÐÒÑ¸´ÖÆ." << endl;
-	q2.empty()? cout << "¶ÓÁÐÎª¿Õ." << endl: cout << "¶ÓÁÐ²»Îª¿Õ" << endl;
+	cout << "é˜Ÿåˆ—å·²å¤åˆ¶." << endl;
+	q2.empty()? cout << "é˜Ÿåˆ—ä¸ºç©º." << endl: cout << "é˜Ÿåˆ—ä¸ä¸ºç©º" << endl;
 	q2.push(5);
 	q2.push(4);
 	q2.pop();
 	q2.pop();
 	q2.pop();
 	q2.pop();
-	q2.empty()? cout << "¶ÓÁÐÎª¿Õ." << endl: cout << "¶ÓÁÐ²»Îª¿Õ" << endl;
+	q2.empty()? cout << "é˜Ÿåˆ—ä¸ºç©º." << endl: cout << "é˜Ÿåˆ—ä¸ä¸ºç©º" << endl;
 	return 0;
 }
