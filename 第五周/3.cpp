@@ -25,7 +25,7 @@ float Dianping::sum =0.0;
 Dianping::Dianping()
 {
     price = 0;
-    strcpy(consumer,"ÎÞÈË");
+    strcpy(consumer,"æ— äºº");
 }
 
 Dianping::Dianping(float _price, char *_consumer)
@@ -48,17 +48,17 @@ Dianping::~Dianping(){}
 
 void Dianping::Display()
 {
-    cout << "Ïû·ÑÕß: " << consumer << endl;
-	cout << "Ïû·Ñ¼Û¸ñ: " << price << endl;
+    cout << "æ¶ˆè´¹è€…: " << consumer << endl;
+	cout << "æ¶ˆè´¹ä»·æ ¼: " << price << endl;
 }
 
 void Dianping::Showaverage()
 {
     if (num == 0){
-		cout << "ÔÝÎÞÈËÏû·Ñ" << endl;
+		cout << "æš‚æ— äººæ¶ˆè´¹" << endl;
 		return;
 	}
-	cout << "Ïû·Ñ¾ù¼Û: " << sum / num << endl;
+	cout << "æ¶ˆè´¹å‡ä»·: " << sum / num << endl;
 }
 
 int main()
