@@ -24,8 +24,8 @@ int Starbucks::sum = 0;
 
 Starbucks::Starbucks()
 {
-    strcpy(name,"½¹ÌÇÂêÆæ¶ä(´ó±­)");
-    strcpy(type,"ÊÖ¹¤µ÷ÖÆÅ¨Ëõ¿§·È");
+    strcpy(name,"ç„¦ç³–ç›å¥‡æœµ(å¤§æ¯)");
+    strcpy(type,"æ‰‹å·¥è°ƒåˆ¶æµ“ç¼©å’–å•¡");
     price = 36;
     num++;
     sum += price;
@@ -60,32 +60,32 @@ Starbucks::~Starbucks()
 
 void Starbucks::Display()
 {
-    cout << "ÉÌÆ·Ãû³Æ£º" << name <<endl;
-    cout << "ÉÌÆ·ÀàĞÍ£º" << type <<endl;
-    cout << "ÉÌÆ·¼Û¸ñ:£¤" << price <<endl<<endl;
+    cout << "å•†å“åç§°ï¼š" << name <<endl;
+    cout << "å•†å“ç±»å‹ï¼š" << type <<endl;
+    cout << "å•†å“ä»·æ ¼:ï¿¥" << price <<endl<<endl;
 }
 
 void Starbucks::Num()
 {
- cout <<"ÄÌ²èµêÏúÊÛÄÌ²è×Ü±­Êı:" << num <<endl;
+ cout <<"å¥¶èŒ¶åº—é”€å”®å¥¶èŒ¶æ€»æ¯æ•°:" << num <<endl;
 }
 
 void Starbucks::Sum()
 {
-cout << "ÄÌ²èµêµÄÈÕÏúÊÛ½ğ¶î:£¤" << sum << endl;
+cout << "å¥¶èŒ¶åº—çš„æ—¥é”€å”®é‡‘é¢:ï¿¥" << sum << endl;
 }
 
 int main()
 {
     Starbucks a1;
-    Starbucks a2("Ä¦¿¨¿É¿ÉËéÆ¬(´ó±­)","ĞÇ±ùÀÖ",37);
+    Starbucks a2("æ‘©å¡å¯å¯ç¢ç‰‡(å¤§æ¯)","æ˜Ÿå†°ä¹",37);
     Starbucks a3(a1);
-    Starbucks a4("ÀäİÍ±ù¿§·È(´ó±­)","ÀäİÍ¿§·È",35);
-    Starbucks a5("éÙÏãÜÔ¼ªÍĞ(´ó±­)","¹û²è",38);
-    Starbucks a6("´×ÒâÌÒÌÒ(´ó±­)","¹û²è",38);
+    Starbucks a4("å†·èƒå†°å’–å•¡(å¤§æ¯)","å†·èƒå’–å•¡",35);
+    Starbucks a5("æ©˜é¦™èŒ‰å‰æ‰˜(å¤§æ¯)","æœèŒ¶",38);
+    Starbucks a6("é†‹æ„æ¡ƒæ¡ƒ(å¤§æ¯)","æœèŒ¶",38);
     Starbucks a7(a2);
     Starbucks a8(a4);
-    Starbucks a9("¸²Åè×ÓĞÇ±ùÀÖ(´ó±­)","ĞÇ±ùÀÖ",37);
+    Starbucks a9("è¦†ç›†å­æ˜Ÿå†°ä¹(å¤§æ¯)","æ˜Ÿå†°ä¹",37);
 
     a1.Display();
     a2.Display();
