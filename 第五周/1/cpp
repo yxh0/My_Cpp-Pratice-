@@ -59,19 +59,19 @@ BookSale::~BookSale ()
 
 void BookSale::Display()
 {
-    cout <<"书名: "<< name << endl;
-    cout << "编号 ISBN." << no << endl;
-    cout << "书本价格:NT$" << price << endl << endl;
+    cout <<"涔﹀悕: "<< name << endl;
+    cout << "缂栧彿 ISBN." << no << endl;
+    cout << "涔︽湰浠锋牸:NT$" << price << endl << endl;
 }
 
 void BookSale::Num()
 {
-    cout <<"售卖书本数量:" << num <<endl;  //卖了书的数目
+    cout <<"鍞崠涔︽湰鏁伴噺:" << num <<endl;  //鍗栦簡涔︾殑鏁扮洰
 }
 
 void BookSale::Sum()
 {
-    cout << "书本总销售额:NT$" << sum << endl;
+    cout << "涔︽湰鎬婚攢鍞:NT$" << sum << endl;
 }
 int main()
 {
